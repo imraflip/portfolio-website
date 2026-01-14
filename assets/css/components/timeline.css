@@ -1,0 +1,77 @@
+/* =========================
+   TIMELINE (PIXEL RAIL)
+   ========================= */
+.timeline {
+    margin-top: 2.5rem;
+    position: relative;
+    padding-left: 3rem;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--border-2);
+}
+
+/* items */
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+/* header alignment unchanged */
+.timeline-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* icon node - positioned on the timeline */
+.timeline-header::before {
+    content: attr(data-icon);
+    position: absolute;
+    left: -2.8rem;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    line-height: 1;
+    background: var(--bg-dark);
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+/* title */
+.timeline-header h3 {
+    font-family: "Jersey 10", sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.1rem;
+    font-weight: 300;
+    margin: 0;
+    color: var(--text-main);
+    text-shadow: 1px 1px 0 var(--border);
+}
+
+/* meta */
+.timeline-meta {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin: 0.35rem 0 0.6rem;
+}
+
+.timeline-item p {
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+    max-width: 760px;
+}
+
+/* =========================
+   TIMELINE VARIANTS
+   ========================= */

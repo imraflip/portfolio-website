@@ -1,0 +1,72 @@
+/* =========================
+   GLOBAL RESET & BOX MODEL
+   ========================= */
+* {
+    box-sizing: border-box;
+    /* border-radius: 0 !important; */
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================
+   ROOT SCROLL & BODY
+   ========================= */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary) var(--bg-dark);
+    scroll-behavior: auto;
+    image-rendering: pixelated;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    /* border-radius: 0; */
+    border: 2px solid var(--border);
+    background-clip: border-box;
+}
+
+body {
+    font-family: "Press Start 2P", ui-monospace, monospace, system-ui;
+    background: var(--bg-dark);
+    color: var(--text-main);
+    min-height: 100vh;
+    line-height: 1.5;
+    image-rendering: pixelated;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =========================
+   LINKS & BUTTONS DEFAULT
+   ========================= */
+a,
+button {
+    transition: none;
+    font-family: inherit;
+    color: var(--px-text);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover,
+button:hover {
+    color: var(--px-hover);
+}
+
+a:active,
+button:active {
+    color: var(--px-active);
+}
+
+a:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 4px;
+}

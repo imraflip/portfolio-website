@@ -1,0 +1,74 @@
+/* =========================
+   BUTTON BASE (PIXEL HITBOX)
+   ========================= */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.7rem 1.4rem;
+    font-size: var(--text-sm);
+    font-weight: 400;
+
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+
+    /* penting untuk efek tekan */
+    user-select: none;
+
+    /* animasi cepat khas retro */
+    transition:
+        transform 0.1s cubic-bezier(0.34, 1.56, 0.64, 1),
+        box-shadow 0.1s ease,
+        background-color 0.15s ease,
+        color 0.15s ease;
+}
+
+
+/* =========================
+   BRICK BUTTON (PRIMARY) -> retro RPG */
+.btn-primary {
+    background: var(--primary);
+    color: var(--bg-dark);
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
+    image-rendering: pixelated;
+}
+
+.btn-primary:hover {
+    background: var(--px-hover);
+    color: var(--bg-dark);
+    border-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.4);
+    transform: translateY(-1px);
+}
+
+.btn-primary:active {
+    transform: translateY(3px);
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================
+   SECONDARY BUTTON -> retro RPG */
+.btn-secondary {
+    background: var(--surface);
+    color: var(--text-main);
+    border: 2px solid rgba(83, 82, 78, 0.8);
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
+    image-rendering: pixelated;
+}
+
+.btn-secondary:hover {
+    background: rgba(83, 82, 78, 0.4);
+    color: var(--text-main);
+    border-color: var(--border-2);
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.4);
+    transform: translateY(-1px);
+}
+
+.btn-secondary:active {
+    transform: translateY(3px);
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+}

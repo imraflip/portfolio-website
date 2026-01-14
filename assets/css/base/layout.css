@@ -1,0 +1,32 @@
+/* =========================
+   CONTAINER & SECTION
+   ========================= */
+main {
+    flex: 1;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding-inline: 2rem;
+}
+
+.special-container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding-inline: 2rem;
+    padding-top: 3rem;
+}
+
+/* =========================
+   HEADER STRUCTURE
+   ========================= */
+header {
+    background: var(--bg-dark);
+    border-bottom: 2px solid var(--border-2);
+    padding: 0.8rem 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,28 @@
+/* BASE */
+@import './base/variables.css';
+@import './base/base.css';
+@import './base/typography.css';
+@import './base/layout.css';
+
+/* UTILS */
+/* @import './utils/helpers.css';
+@import './utils/transitions.css';*/
+@import './animations/keyframes.css';
+@import './utils/animations-utilities.css';
+
+/* COMPONENTS */
+@import './components/text.css';
+@import './components/nav.css';
+@import './components/popup.css';
+@import './components/contact.css';
+@import './components/hero.css';
+@import './components/home-sections.css';
+@import './components/typewriter.css';
+@import './components/buttons.css';
+@import './components/education.css';
+@import './components/skills.css';
+@import './components/projects.css';
+@import './components/timeline.css';
+@import './components/footer.css';
+@import './components/project-detail.css';
+@import './components/wallpapers.css';

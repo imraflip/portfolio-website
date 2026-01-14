@@ -1,0 +1,17 @@
+/* =========================
+   TYPEWRITER CURSOR
+   ========================= */
+.typewriter-cursor {
+    display: inline-block;
+    width: 8px;
+    height: 1.3em;
+    background: var(--text-main);
+    margin-left: 2px;
+    animation: blink 1s steps(1) infinite;
+}
+
+@media (max-width: 768px) {
+    .typewriter-cursor {
+        display: none;
+    }
+}

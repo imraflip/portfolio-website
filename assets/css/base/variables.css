@@ -1,0 +1,63 @@
+:root {
+    /* =========================
+       BACKGROUND (world space)
+       ========================= */
+    --bg-dark: rgb(8, 7, 26);       /* gelap solid, dungeon / overworld */
+    --bg-light: #2b2b2b;      /* panel / sekunder */
+
+    /* =========================
+       SURFACE (panels / windows)
+       ========================= */
+    --surface: #2b2b2b;       /* panel solid */
+
+    /* =========================
+       ACCENT COLORS (game logic)
+       ========================= */
+    --primary: #ffbb00;       /* kuning pixel retro, aksi / highlight */
+    --secondary: #3cff5c;     /* hijau HP / sukses */
+    --danger: #ff3c3c;        /* merah damage / error */
+    --success: #00d9ff;       /* cyan / info */
+    --info: #a78bfa;          /* purple / code */
+
+    /* =========================
+       TEXT (foreground sprites)
+       ========================= */
+    --text-main: #e0e0e0;     /* putih pixel */
+    --text-muted: #9a9a9a;    /* abu-ungu retro, tetap terbaca */
+
+    /* =========================
+       UI OUTLINES
+       ========================= */
+    --border: #000000;
+    --border-2: #53524e;
+
+    /* =========================
+       TYPOGRAPHY SCALE
+       (DISCRETE, GRID-ALIGNED)
+       ========================= */
+    --text-xs: 0.75rem;   /* 12px */
+    --text-sm: 0.875rem;  /* 14px */
+    --text-base: 1rem;    /* 16px */
+    --text-lg: 1.2rem;      /* 24px */
+    --text-xl: 2.5rem;    /* 40px */
+
+    /* =========================
+       LAYOUT GRID
+       ========================= */
+    --max-width: 1024px;      /* power-of-two feel */
+    --timeline-axis: 16px;    /* kelipatan grid */
+
+    /* base pixel colors */
+    --px-bg: #1a1a1a;
+    --px-panel: #2b2b2b;
+    --px-border: #000000;
+
+    /* interactive states */
+    --px-idle: #2b2b2b;
+    --px-hover: #ffcc00;
+    --px-active: #e6b800;
+    --px-disabled: #555555;
+
+    --px-text: #e0e0e0;
+    --px-text-muted: #9a9a9a;
+}

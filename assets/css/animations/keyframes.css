@@ -1,0 +1,290 @@
+/* =========================
+   ANIMATIONS
+   ========================= */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* @keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+} */
+
+@keyframes breathe-float {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(255, 187, 0, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 187, 0, 0.6);
+    }
+}
+
+/* =========================
+   FADE IN ANIMATIONS
+   ========================= */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in-down {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* =========================
+   SCALE & GROW ANIMATIONS
+   ========================= */
+@keyframes scale-up {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-bounce {
+    0% {
+        transform: scale(0.95);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* =========================
+   SHIMMER & SHINE EFFECTS
+   ========================= */
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+@keyframes shine {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+/* =========================
+   ROTATE & FLIP ANIMATIONS
+   ========================= */
+@keyframes rotate-in {
+    from {
+        opacity: 0;
+        transform: rotate(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes flip-x {
+    from {
+        transform: rotateX(90deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes flip-y {
+    from {
+        transform: rotateY(90deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+/* =========================
+   BOUNCE ANIMATIONS
+   ========================= */
+@keyframes bounce-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* =========================
+   GLOW ANIMATIONS
+   ========================= */
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 10px rgba(255, 187, 0, 0.3), 0 0 20px rgba(255, 187, 0, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 187, 0, 0.6), 0 0 30px rgba(255, 187, 0, 0.3);
+    }
+}
+
+@keyframes neon-glow {
+    0%, 100% {
+        text-shadow: 0 0 5px rgba(255, 187, 0, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 10px rgba(255, 187, 0, 0.8), 0 0 20px rgba(255, 187, 0, 0.5);
+    }
+}
+
+/* =========================
+   WAVE ANIMATIONS
+   ========================= */
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-5px);
+    }
+    75% {
+        transform: translateY(5px);
+    }
+}
+
+@keyframes wave-text {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(-5px);
+    }
+}
+
+/* =========================
+   PARALLAX & DEPTH
+   ========================= */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes float-slow {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* =========================
+   TEXT ANIMATIONS
+   ========================= */
+@keyframes letter-spacing-increase {
+    from {
+        letter-spacing: 0em;
+    }
+    to {
+        letter-spacing: 0.1em;
+    }
+}
+
+@keyframes color-change {
+    0%, 100% {
+        color: var(--text-main);
+    }
+    50% {
+        color: var(--primary);
+    }
+}

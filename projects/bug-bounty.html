@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bug Bounty & VDP Participation — Rafli</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="/" class="brand">Rafli Permana</a>
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <a href="/" class="brand brand-mobile">Rafli Permana</a>
+        <nav id="nav-menu">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../skills.html">Skills</a>
+            <a href="../portfolio.html" class="active">Projects</a>
+            <a href="../experience.html">Experience</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <a href="../portfolio.html" class="back-link">
+            ← Back to Projects
+        </a>
+        <section class="project-header">
+            <span class="card-type type-project">PROJECT</span>
+
+            <h1 class="project-title">Bug Bounty & VDP Participation</h1>
+
+            <p class="project-description">
+                Active participation in bug bounty programs and vulnerability disclosure programs.
+                Collection of security findings and vulnerability reports from real-world web applications.
+            </p>
+        </section>
+
+        <section class="project-entries">
+
+            <!-- Entry 1 -->
+            <div class="project-entry reveal">
+                <h2 class="entry-title">OAuth Misconfiguration at Jobber</h2>
+                <time class="entry-date" datetime="2024-11-18">
+                    Discovered on Nov 18, 2024
+                </time>
+                <div class="entry-grid">
+                    <div class="entry-item">
+                        <div class="entry-embed">
+                            <iframe src="https://www.youtube.com/embed/GeKz7NjED7c" title="Authentication Flow Analysis"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+
+                        <p class="entry-description">
+                            Demonstration of authentication logic inspection and
+                            identification of potential access control weaknesses
+                            in a simulated web environment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-entry reveal">
+                <h2 class="entry-title">Improper Access Control Screenshot</h2>
+                <time class="entry-date" datetime="2024-11-18">
+                    Discovered on Nov 18, 2024
+                </time>
+                <div class="entry-grid">
+                    <div class="entry-item">
+                        <img src="../assets/img/placeholder-screenshot.png" alt="Access control bypass evidence" class="media-image">
+                        <p class="entry-description">
+                            Screenshot showing unauthorized access to restricted endpoint
+                            due to missing server-side authorization checks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <span class="footer-name">
+                Rafli Permana
+                <span class="footer-year">© <span id="current-year"></span></span>
+            </span>
+
+            <span class="footer-sep">·</span>
+            <a href="mailto:imraflip@gmail.com" target="_blank" rel="noopener noreferrer">Contact</a>
+            <span class="footer-sep">·</span>
+            <a href="https://github.com/imraflip" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+    </footer>
+    <script type="module" src="../assets/js/main.js"></script>
+</body>
+
+</html>

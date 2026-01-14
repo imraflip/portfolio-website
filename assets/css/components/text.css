@@ -1,0 +1,26 @@
+/* =========================
+   PAGE TITLE
+   ========================= */
+.page-title {
+    font-family: "Press Start 2P", monospace;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.page-description {
+    font-size: var(--text-lg);
+}
+
+/* =========================
+   TEXT BLOCK
+   ========================= */
+.text-block p {
+    margin-bottom: 1.2rem;
+    color: var(--text-main);
+    font-size: var(--text-base);
+}
+
+.text-block p.muted {
+    color: var(--text-muted);
+}

@@ -1,0 +1,56 @@
+/* =========================
+   SKILLS SECTION
+   ========================= */
+.skills-section {
+    margin-bottom: 3.5rem;
+}
+
+.skills-section h2 {
+    font-family: "Jersey 10", sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.1rem;
+    font-weight: 300;
+    margin-bottom: 0.6rem;
+    color: var(--text-main);
+    text-shadow: 1px 1px 0 var(--border);
+}
+
+.skills-section p {
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+    max-width: 720px;
+    margin-bottom: 1.2rem;
+}
+
+/* =========================
+   SKILL TAGS (PIXEL TILES)
+   ========================= */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.skill-tag {
+    font-size: var(--text-xs);
+    padding: 0.35rem 0.7rem;
+    border-radius: 0;
+    border: 2px solid var(--border);
+    border-radius: 5px;
+    color: var(--text-main);
+    background: var(--surface);
+    transition: 
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.1s ease,
+        box-shadow 0.2s ease;
+}
+
+.skill-tag:hover {
+    background: var(--primary);
+    font-weight: 900;
+    color: var(--bg-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 0 rgba(255, 187, 0, 0.3);
+    border-radius: 5px;
+}

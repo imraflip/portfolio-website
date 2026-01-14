@@ -1,0 +1,47 @@
+/* =========================
+   CONTACT SECTION
+   ========================= */
+.contact {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.contact-list {
+    font-size: var(--text-xs);
+    border-left: 4px solid var(--border-2);
+    padding-left: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.contact-item {
+    display: flex;
+    gap: 1rem;
+    background: var(--bg-light);
+    border: 2px solid var(--border);
+    box-shadow: 4px 4px 0px #000;
+    padding: 10px;
+    margin-bottom: 16px;
+    max-width: 250px;
+    width: 100%;
+}
+
+.contact-label {
+    color: var(--text-muted);
+    min-width: 80px;
+}
+
+.contact-value {
+    color: var(--primary);
+}
+
+.contact-value a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: none;
+}
+
+.contact-value a:hover {
+    color: var(--text-main);
+}

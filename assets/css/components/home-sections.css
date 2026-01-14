@@ -1,0 +1,206 @@
+/* =========================
+   PIXEL STATS - SOFT 8BIT STYLE
+   ========================= */
+.pixel-stats {
+    position: absolute;
+    top: 100px;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    z-index: 10;
+}
+
+.pixel-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1.2rem;
+    background: rgba(43, 43, 43, 0.9);
+    border: 2px solid rgba(83, 82, 78, 0.8);
+    border-radius: 0;
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
+    min-width: 100px;
+    transition: all 0.3s ease;
+    image-rendering: pixelated;
+}
+
+.pixel-stat-item:hover {
+    border-color: var(--primary);
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.4);
+    transform: translateX(-3px);
+}
+
+.pixel-stat-value {
+    font-family: "Jersey 10", monospace;
+    font-size: 28px;
+    font-weight: 300;
+    color: var(--primary);
+    line-height: 1;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.pixel-stat-label {
+    font-size: 9px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 0.3rem;
+    opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .pixel-stats {
+        display: none;
+    }
+}
+
+/* =========================
+   STATS SECTION
+   ========================= */
+.stats-section {
+    padding: 3rem 0;
+    margin-top: 2rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.stat-card {
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    border-color: var(--border-2);
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-family: "Jersey 10", sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    color: var(--primary);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* =========================
+   FEATURED PROJECTS SECTION
+   ========================= */
+.featured-section {
+    padding: 3rem 0;
+}
+
+.section-title {
+    font-family: "Jersey 10", sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    color: var(--text-main);
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.section-cta {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* =========================
+   SOCIAL SECTION
+   ========================= */
+.social-section {
+    padding: 3rem 0 4rem;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.social-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.social-card:hover {
+    border-color: var(--border-2);
+    transform: translateY(-5px);
+}
+
+.social-icon {
+    font-size: 48px;
+    margin-bottom: 0.8rem;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.social-card:hover .social-icon {
+    filter: grayscale(0%);
+}
+
+.social-name {
+    font-family: "Jersey 10", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--text-main);
+    margin-bottom: 0.3rem;
+}
+
+.social-handle {
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media (max-width: 768px) {
+    .stats-grid,
+    .featured-grid,
+    .social-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-number {
+        font-size: 40px;
+    }
+    
+    .section-title {
+        font-size: 30px;
+    }
+}

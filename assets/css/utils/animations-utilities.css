@@ -1,0 +1,131 @@
+/* =========================
+   UTILITY CLASSES FOR ANIMATIONS
+   ========================= */
+
+/* Fade animations */
+.animate-fade-in {
+    animation: fade-in 0.6s ease-out;
+}
+
+.animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out;
+}
+
+.animate-fade-in-down {
+    animation: fade-in-down 0.6s ease-out;
+}
+
+.animate-slide-in-left {
+    animation: slide-in-left 0.6s ease-out;
+}
+
+.animate-slide-in-right {
+    animation: slide-in-right 0.6s ease-out;
+}
+
+/* Scale animations */
+.animate-scale-up {
+    animation: scale-up 0.5s ease-out;
+}
+
+.animate-scale-bounce {
+    animation: scale-bounce 0.6s ease-out;
+}
+
+/* Rotate animations */
+.animate-rotate-in {
+    animation: rotate-in 0.5s ease-out;
+}
+
+.animate-flip-x {
+    animation: flip-x 0.6s ease-out;
+}
+
+.animate-flip-y {
+    animation: flip-y 0.6s ease-out;
+}
+
+/* Bounce animations */
+.animate-bounce-in {
+    animation: bounce-in 0.6s ease-out;
+}
+
+.animate-bounce {
+    animation: bounce 1s infinite;
+}
+
+/* Glow animations */
+.animate-glow {
+    animation: glow 2s ease-in-out infinite;
+}
+
+.animate-neon-glow {
+    animation: neon-glow 2s ease-in-out infinite;
+}
+
+/* Wave animations */
+.animate-wave {
+    animation: wave 1.5s ease-in-out infinite;
+}
+
+.animate-wave-text {
+    animation: wave-text 1.5s ease-in-out infinite;
+}
+
+/* Float animations */
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-slow {
+    animation: float-slow 4s ease-in-out infinite;
+}
+
+/* Text animations */
+.animate-letter-spacing {
+    animation: letter-spacing-increase 0.6s ease-out;
+}
+
+.animate-color-change {
+    animation: color-change 2s ease-in-out infinite;
+}
+
+/* Delay utilities */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-700 { animation-delay: 0.7s; }
+.delay-800 { animation-delay: 0.8s; }
+.delay-900 { animation-delay: 0.9s; }
+.delay-1000 { animation-delay: 1s; }
+
+/* Duration utilities */
+.duration-300 { animation-duration: 0.3s; }
+.duration-500 { animation-duration: 0.5s; }
+.duration-700 { animation-duration: 0.7s; }
+.duration-1000 { animation-duration: 1s; }
+.duration-1500 { animation-duration: 1.5s; }
+.duration-2000 { animation-duration: 2s; }
+
+/* Fill mode utilities */
+.fill-forwards { animation-fill-mode: forwards; }
+.fill-backwards { animation-fill-mode: backwards; }
+.fill-both { animation-fill-mode: both; }
+
+/* Direction utilities */
+.direction-reverse { animation-direction: reverse; }
+.direction-alternate { animation-direction: alternate; }
+
+/* Iteration count utilities */
+.repeat-infinite { animation-iteration-count: infinite; }
+.repeat-once { animation-iteration-count: 1; }
+
+/* Timing function utilities */
+.ease-linear { animation-timing-function: linear; }
+.ease-in { animation-timing-function: ease-in; }
+.ease-out { animation-timing-function: ease-out; }
+.ease-in-out { animation-timing-function: ease-in-out; }
+.ease-bounce { animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1); }

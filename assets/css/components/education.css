@@ -1,0 +1,46 @@
+/* =========================
+   EDUCATION SECTION
+   ========================= */
+.education {
+    margin-top: 3rem;
+}
+
+.education-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.education-logo {
+    width: 100px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 0;
+    background: var(--surface);
+    padding: 2px;
+    border: 2px solid var(--border);
+    image-rendering: pixelated;
+}
+
+.education-details h2 {
+    font-family: "Jersey 10", sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.1rem;
+    font-weight: 300;
+    margin-bottom: 0.2rem;
+    text-shadow: 1px 1px 0 var(--border);
+    color: var(--text-main);
+}
+
+.education-details .year {
+    font-size: var(--text-xs);
+    color: var(--text-muted);
+    margin-bottom: 0.6rem;
+}
+
+.education-details p {
+    font-size: var(--text-sm);
+    color: var(--text-main);
+    max-width: 640px;
+}

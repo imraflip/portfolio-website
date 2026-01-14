@@ -1,0 +1,135 @@
+/* =========================
+   WALLPAPER
+   ========================= */
+.wallpaper-index {
+    background-image: url("../../img/backgrounds/wallpaper-cozy-desk.gif");
+    background-position: center;
+    background-size: auto 100%;
+}
+
+.wallpaper-about {
+    background-image:
+        linear-gradient(to bottom,
+            rgba(26, 26, 26, 0.15),
+            rgba(4, 3, 34, 0.85),
+            rgb(8, 7, 26)),
+        url("../../img/backgrounds/wallpaper-landscape-02.jpg");
+    background-size:
+        100% auto;
+    padding-top: 3rem;
+}
+
+/* .wallpaper-about > * {
+    position: relative;
+    z-index: 1;
+} */
+
+.wallpaper-skills {
+    background-image:
+        linear-gradient(to bottom,
+            rgba(26, 26, 26, 0.05),
+            rgba(4, 3, 34, 0.85),
+            rgb(8, 7, 26)),
+        url("../../img/backgrounds/wallpaper-minimoss.gif");
+    background-size:
+        100% auto;
+    padding-top: 3rem;
+}
+
+.wallpaper-projects {
+    background-image:
+        linear-gradient(to bottom,
+            rgba(8, 7, 26, 0.96),   /* atas menyatu */
+            rgba(8, 7, 26, 0.60),
+            rgba(8, 7, 26, 0.20), /* tengah paling jelas */
+            rgba(8, 7, 26, 0.96),
+            rgba(8, 7, 26, 0.97)
+            ),
+        url("../../img/backgrounds/wallpaper-landscape-01.jpg");
+    background-size:
+        100% auto;
+    padding-bottom: 8rem;
+    min-height: calc(100vh - 200px);
+}
+
+.wallpaper-experience {
+    position: relative;
+
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(8, 7, 26, 0.96),   /* atas menyatu */
+            rgba(8, 7, 26, 0.60),
+            rgba(8, 7, 26, 0.20), /* tengah paling jelas */
+            rgba(8, 7, 26, 0.96),
+            rgba(8, 7, 26, 0.97)   /* bawah menyatu */
+        ),
+        url("../../img/backgrounds/wallpaper-camp.gif");
+
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+   ========================= */
+@media (max-width: 768px) {
+    /* Kompensasi untuk fixed header */
+    body {
+        padding-top: 60px;
+    }
+    
+    .wallpaper-about,
+    .wallpaper-skills,
+    .wallpaper-projects,
+    .wallpaper-experience {
+        background-size: cover;
+        background-position: center;
+    }
+    
+    /* Adjust gradient untuk mobile agar blend lebih smooth di orientasi vertical */
+    .wallpaper-about {
+        background-image:
+            linear-gradient(to bottom,
+                rgba(26, 26, 26, 0.30),
+                rgba(4, 3, 34, 0.90),
+                rgb(8, 7, 26)),
+            url("../../img/backgrounds/wallpaper-landscape-02.jpg");
+    }
+    
+    .wallpaper-skills {
+        background-image:
+            linear-gradient(to bottom,
+                rgba(26, 26, 26, 0.20),
+                rgba(4, 3, 34, 0.90),
+                rgb(8, 7, 26)),
+            url("../../img/backgrounds/wallpaper-minimoss.gif");
+    }
+    
+    .wallpaper-projects {
+        background-image:
+            linear-gradient(to bottom,
+                rgba(8, 7, 26, 0.98),
+                rgba(8, 7, 26, 0.75),
+                rgba(8, 7, 26, 0.40),
+                rgba(8, 7, 26, 0.75),
+                rgba(8, 7, 26, 0.98)
+            ),
+            url("../../img/backgrounds/wallpaper-landscape-01.jpg");
+    }
+    
+    .wallpaper-experience {
+        background-image:
+            linear-gradient(
+                to bottom,
+                rgba(8, 7, 26, 0.98),
+                rgba(8, 7, 26, 0.75),
+                rgba(8, 7, 26, 0.40),
+                rgba(8, 7, 26, 0.75),
+                rgba(8, 7, 26, 0.98)
+            ),
+            url("../../img/backgrounds/wallpaper-camp.gif");
+    }
+}
