@@ -232,6 +232,15 @@
     background: var(--px-panel);
 }
 
+.type-featured {
+    font-weight: bold;
+    background: var(--px-panel);
+    border: 2px solid #c084fc;
+    border-radius: 6px;
+    padding: 0.35rem 0.8rem;
+    box-shadow: 0 0 8px rgba(192, 132, 252, 0.3);
+}
+
 /* highlight = hover color */
 .project-card.highlight {
     border-color: var(--primary);
