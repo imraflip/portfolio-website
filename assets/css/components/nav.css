@@ -64,14 +64,11 @@ nav a::after {
     transition: width 0.3s ease;
 }
 
-/* Unified hover: Isometric Lift */
+/* Unified hover: Subtle effect */
 nav a:hover {
     color: var(--bg-dark);
     background-color: var(--primary);
-    transform: translateY(-5px) skewY(-2deg);
-    box-shadow: 
-        3px 8px 0px #000,
-        3px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 nav a:hover::after {
