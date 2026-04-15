@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://raflipermana.com/sitemap.xml
+Sitemap: https://imraflip.com/sitemap.xml
