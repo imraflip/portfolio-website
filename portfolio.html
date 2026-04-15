@@ -5,20 +5,26 @@
     <meta charset="UTF-8">
     <title>Portfolio — Rafli Permana</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects, writeups, code, and certifications from Rafli Permana's work in offensive security and computer science.">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <meta property="og:title" content="Portfolio — Rafli Permana">
+    <meta property="og:description" content="Projects, writeups, code, and certifications from Rafli Permana's work in offensive security and computer science.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://raflipermana.com/portfolio.html">
+    <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="assets/css/main.css">
-    <script type="module" src="assets/js/main.js" defer></script>
 </head>
 
 <body>
 
     <header>
-        <a href="/" class="brand">Rafli Permana</a>
-        <button class="hamburger-btn" id="hamburger-btn">
+        <a href="index.html" class="brand">Rafli Permana</a>
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
             <span></span>
             <span></span>
             <span></span>
         </button>
-        <a href="/" class="brand brand-mobile">Rafli Permana</a>
+        <a href="index.html" class="brand brand-mobile">Rafli Permana</a>
         <nav id="nav-menu">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -40,17 +46,16 @@
 
         <div class="wallpaper-projects">
         <section class="container">
-            <div class="category-tabs">
-                <button class="tab-btn active" data-filter="all"><span class="tab-icon">🏠</span> All</button>
-                <button class="tab-btn" data-filter="projects"><span class="tab-icon">📁</span> Projects</button>
-                <button class="tab-btn" data-filter="article"><span class="tab-icon">📝</span> Article</button>
-                <button class="tab-btn" data-filter="code"><span class="tab-icon">💻</span> Code</button>
-                <button class="tab-btn" data-filter="achievement"><span class="tab-icon">🏆</span> Achievement</button>
+            <div class="category-tabs" role="tablist" aria-label="Portfolio filter">
+                <button class="tab-btn active" data-filter="all" role="tab" aria-selected="true"><span class="tab-icon">🏠</span> All</button>
+                <button class="tab-btn" data-filter="projects" role="tab" aria-selected="false"><span class="tab-icon">📁</span> Projects</button>
+                <button class="tab-btn" data-filter="article" role="tab" aria-selected="false"><span class="tab-icon">📝</span> Article</button>
+                <button class="tab-btn" data-filter="code" role="tab" aria-selected="false"><span class="tab-icon">💻</span> Code</button>
+                <button class="tab-btn" data-filter="achievement" role="tab" aria-selected="false"><span class="tab-icon">🏆</span> Achievement</button>
             </div>
 
             <div class="projects-grid" id="projects-section">
 
-                <!-- Bootcamp Final Project: Offensive Phase -->
                 <div class="reveal" data-stagger data-category="projects">
                     <a href="https://drive.google.com/drive/folders/19j1zQ7yIr2pKuWUJ5IvmoqA6Yl1lr0tU?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-card featured">
                         <span class="card-type type-featured">FEATURED PROJECT</span>
@@ -61,7 +66,6 @@
                     </a>
                 </div>
 
-                <!-- Bug Bounty & VDP Participation -->
                 <div class="reveal" data-stagger data-category="projects achievement">
                     <a href="projects/bug-bounty.html" class="project-card">
                         <span class="card-type type-project">PROJECT</span>
@@ -73,7 +77,6 @@
                     </a>
                 </div>
 
-                <!-- Medium Writeup 1 -->
                 <div class="reveal" data-stagger data-category="article">
                     <a href="https://medium.com/@imraflip/exploiting-eternalblue-in-a-lab-environment-da1ce2ef6651" target="_blank" rel="noopener noreferrer" class="project-card">
                         <span class="card-type type-article">ARTICLE</span>
@@ -85,7 +88,6 @@
                     </a>
                 </div>
 
-                <!-- GitHub Project 1 -->
                 <div class="reveal" data-stagger data-category="code">
                     <a href="https://github.com/imraflip/security-automation-scripts" target="_blank" rel="noopener noreferrer" class="project-card">
                         <span class="card-type type-code">CODE</span>
@@ -99,15 +101,13 @@
 
             </div>
 
-            <!-- Achievements -->
             <div class="achievements-section" id="achievements-section">
                 <div class="achievements-grid">
-                    <!-- Achievement 1 -->
-                    <div class="reveal" data-stagger>
+                    <div class="reveal" data-stagger data-category="achievement">
                         <a href="https://www.coursera.org/account/accomplishments/professional-cert/certificate/C2XNVN0WIK3X" target="_blank" rel="noopener noreferrer" class="achievement-card label-right">
                             <div class="achievement-image-wrapper">
                                 <span class="card-type type-achievement">ACHIEVEMENT</span>
-                                <img src="assets/img/google_it_support_cert.png" alt="Google IT Support Professional Certificate" class="achievement-image">
+                                <img src="assets/img/google_it_support_cert.png" alt="Google IT Support Professional Certificate" class="achievement-image" loading="lazy">
                             </div>
                             <div class="achievement-content">
                                 <h3>Google IT Support Professional Certificate</h3>
@@ -116,12 +116,11 @@
                         </a>
                     </div>
 
-                    <!-- Achievement 2 -->
-                    <div class="reveal" data-stagger>
-                        <a href="https://www.coursera.org/account/accomplishments/professional-cert/certificate/C2XNVN0WIK3X" target="_blank" rel="noopener noreferrer" class="achievement-card label-right">
+                    <div class="reveal" data-stagger data-category="achievement">
+                        <a href="#" class="achievement-card label-right" aria-label="THM Junior Pentester Certificate — link pending">
                             <div class="achievement-image-wrapper">
                                 <span class="card-type type-achievement">ACHIEVEMENT</span>
-                                <img src="assets/img/thm-jr-pentester.jpg" alt="THM Junior Pentester Certificate" class="achievement-image">
+                                <img src="assets/img/thm-jr-pentester.jpg" alt="THM Junior Pentester Certificate" class="achievement-image" loading="lazy">
                             </div>
                             <div class="achievement-content">
                                 <h3>THM Junior Pentester Certificate</h3>
@@ -148,7 +147,7 @@
             <a href="https://github.com/imraflip" target="_blank">GitHub</a>
         </div>
     </footer>
-
+    <script type="module" src="assets/js/main.js"></script>
 </body>
 
 </html>
