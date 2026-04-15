@@ -1,16 +1,9 @@
-/* =========================
-   GLOBAL RESET & BOX MODEL
-   ========================= */
 * {
     box-sizing: border-box;
-    /* border-radius: 0 !important; */
     margin: 0;
     padding: 0;
 }
 
-/* =========================
-   ROOT SCROLL & BODY
-   ========================= */
 html {
     scrollbar-width: thin;
     scrollbar-color: var(--primary) var(--bg-dark);
@@ -28,7 +21,6 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     background-color: var(--primary);
-    /* border-radius: 0; */
     border: 2px solid var(--border);
     background-clip: border-box;
 }
@@ -44,9 +36,6 @@ body {
     flex-direction: column;
 }
 
-/* =========================
-   LINKS & BUTTONS DEFAULT
-   ========================= */
 a,
 button {
     transition: none;

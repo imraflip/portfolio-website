@@ -1,6 +1,3 @@
-/* =========================
-   BRAND / LOGO
-   ========================= */
 header .brand {
     position: relative;
     font-size: 1.2rem;
@@ -19,9 +16,6 @@ header .brand-mobile {
     display: none;
 }
 
-/* =========================
-   NAVIGATION LINKS
-   ========================= */
 /* Provide a perspective context for 3D transforms */
 nav {
     perspective: 800px;
@@ -83,9 +77,6 @@ nav a.active {
 
 /* Comparison variants removed; all nav items use the isometric lift */
 
-/* =========================
-   HAMBURGER MENU BUTTON
-   ========================= */
 .hamburger-btn {
     display: none;
     flex-direction: column;
@@ -117,9 +108,6 @@ nav a.active {
     transform: rotate(-45deg) translate(0.55rem, -0.55rem);
 }
 
-/* =========================
-   MOBILE RESPONSIVE
-   ========================= */
 @media (max-width: 768px) {
     header {
         position: fixed;

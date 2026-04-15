@@ -1,31 +1,20 @@
-/* =========================
-   TYPEWRITER EFFECT MODULE
-   ========================= */
-
-export const initTypewriter = () => {
-    const text = "Penetration Tester | Computer Science Student";
-    const target = document.getElementById("typed-text");
-    const cursor = document.querySelector(".typewriter-cursor");
-
-    // Only run on pages with typewriter element
+export default function initTypewriter() {
+    const target = document.getElementById('typed-text');
     if (!target) return;
 
-    let index = 0;
-    const speed = 55; // milliseconds per character
+    const cursor = document.querySelector('.typewriter-cursor');
+    const text = 'Penetration Tester | Computer Science Student';
+    const speed = 55;
+    let i = 0;
 
-    function typeText() {
-        if (index < text.length) {
-            target.textContent += text.charAt(index);
-            index++;
-            setTimeout(typeText, speed);
+    const tick = () => {
+        if (i < text.length) {
+            target.textContent += text.charAt(i++);
+            setTimeout(tick, speed);
         } else if (cursor) {
-            // Show cursor when typing complete
             cursor.style.opacity = 1;
         }
-    }
+    };
 
-    // Start typewriter after small delay
-    setTimeout(typeText, 400);
-};
-
-export default initTypewriter;
+    setTimeout(tick, 400);
+}

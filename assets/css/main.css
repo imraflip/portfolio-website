@@ -1,16 +1,11 @@
-/* BASE */
 @import './base/variables.css';
 @import './base/base.css';
 @import './base/typography.css';
 @import './base/layout.css';
 
-/* UTILS */
-/* @import './utils/helpers.css';
-@import './utils/transitions.css';*/
 @import './animations/keyframes.css';
 @import './utils/animations-utilities.css';
 
-/* COMPONENTS */
 @import './components/text.css';
 @import './components/nav.css';
 @import './components/popup.css';

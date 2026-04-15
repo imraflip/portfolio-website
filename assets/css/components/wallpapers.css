@@ -1,6 +1,3 @@
-/* =========================
-   WALLPAPER
-   ========================= */
 .wallpaper-index {
     background-image: url("../../img/backgrounds/wallpaper-cozy-desk.gif");
     background-position: center;
@@ -72,9 +69,6 @@
 
 }
 
-/* =========================
-   MOBILE RESPONSIVE
-   ========================= */
 @media (max-width: 768px) {
     /* Kompensasi untuk fixed header */
     body {

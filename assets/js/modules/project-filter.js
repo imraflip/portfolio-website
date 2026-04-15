@@ -1,60 +1,40 @@
-/* =========================
-   PROJECT FILTER MODULE
-   ========================= */
-
 export default function initProjectFilter() {
-    const tabButtons = document.querySelectorAll('.tab-btn');
+    const tabs = document.querySelectorAll('.tab-btn');
+    if (tabs.length === 0) return;
+
+    const cards = document.querySelectorAll('[data-category]');
     const projectsSection = document.getElementById('projects-section');
     const achievementsSection = document.getElementById('achievements-section');
-    const projectCards = document.querySelectorAll('[data-category]');
 
-    if (tabButtons.length === 0) return;
+    const hasVisibleChild = (section) =>
+        section && [...section.querySelectorAll('[data-category]')].some(
+            (c) => !c.classList.contains('hidden')
+        );
 
-    tabButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const filterValue = button.dataset.filter;
+    const applyFilter = (filter) => {
+        cards.forEach((card) => {
+            const categories = card.dataset.category.split(' ');
+            const match = filter === 'all' || categories.includes(filter);
+            card.classList.toggle('hidden', !match);
+        });
 
-            // Update active button
-            tabButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
+        if (projectsSection) {
+            projectsSection.style.display = hasVisibleChild(projectsSection) ? 'grid' : 'none';
+        }
+        if (achievementsSection) {
+            achievementsSection.style.display = hasVisibleChild(achievementsSection) ? 'block' : 'none';
+        }
+    };
 
-            // Handle filter logic
-            if (filterValue === 'achievement') {
-                // Show only achievements
-                if (projectsSection) projectsSection.style.display = 'none';
-                if (achievementsSection) achievementsSection.style.display = 'block';
-            } else if (filterValue === 'all') {
-                // Show both projects and achievements
-                if (projectsSection) projectsSection.style.display = 'grid';
-                if (achievementsSection) achievementsSection.style.display = 'block';
-
-                // Show all project cards
-                if (projectCards.length > 0) {
-                    projectCards.forEach(card => {
-                        card.classList.remove('hidden');
-                    });
-                }
-            } else {
-                // Show only filtered projects
-                if (projectsSection) projectsSection.style.display = 'grid';
-                if (achievementsSection) achievementsSection.style.display = 'none';
-
-                // Filter projects
-                if (projectCards.length > 0) {
-                    projectCards.forEach(card => {
-                        const categories = card.dataset.category.split(' ');
-                        const shouldShow = categories.includes(filterValue);
-
-                        if (shouldShow) {
-                            card.classList.remove('hidden');
-                        } else {
-                            card.classList.add('hidden');
-                        }
-                    });
-                }
-            }
+    tabs.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            tabs.forEach((b) => {
+                b.classList.remove('active');
+                b.setAttribute('aria-selected', 'false');
+            });
+            btn.classList.add('active');
+            btn.setAttribute('aria-selected', 'true');
+            applyFilter(btn.dataset.filter);
         });
     });
 }
-
-

@@ -1,8 +1,4 @@
-/* =========================
-   HERO 
-   ========================= */
 .hero {
-    /* background-image: url('../../img/rock3.png'); - File not found, commented out */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -17,9 +13,6 @@
     padding: 0 1.5rem;
 }
 
-/* =========================
-   HERO TEXT
-   ========================= */
 .hero-text {
     animation: breathe-float 5.5s ease-in-out infinite;
 }
@@ -53,9 +46,6 @@
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
 }
 
-/* =========================
-   MOBILE RESPONSIVE
-   ========================= */
 @media (max-width: 768px) {
     .hero {
         min-height: calc(100vh - 60px);
@@ -86,9 +76,6 @@
     }
 }
 
-/* =========================
-   HERO ACTIONS
-   ========================= */
 .hero-actions {
     margin-top: -0.8rem;
     display: flex;

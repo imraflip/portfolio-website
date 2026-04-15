@@ -1,13 +1,7 @@
-/* =========================
-   IMPORT FONT
-   ========================= */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap");
 
-/* =========================
-   HEADING & GLOBAL TEXT
-   ========================= */
 h1, h2, h3, .hero-text h1, #typed-text, .hero-actions a, header a, nav a, .project-title {
     font-family: "Press Start 2P", monospace;
 }
@@ -18,14 +12,6 @@ nav a {
     font-size: larger;
     font-style: normal;
 }
-
-/* Body / Descriptions */
-/* body, .contact-item, .project-description,
-.doc-subtitle, .entry-description, .skills-section p, .timeline-meta {
-    font-family: ui-monospace, "Courier New", monospace;
-    font-weight: 700;
-    image-rendering: pixelated;
-} */
 
 body, .contact-item, .project-description,
 .doc-subtitle, .entry-description, .skills-section p, .timeline-meta {

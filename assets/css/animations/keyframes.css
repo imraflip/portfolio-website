@@ -1,6 +1,14 @@
-/* =========================
-   ANIMATIONS
-   ========================= */
+@keyframes skill-tag-enter {
+    from {
+        opacity: 0;
+        transform: translateY(10px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
 @keyframes blink {
     0% { opacity: 1; }
     50% { opacity: 0; }
@@ -31,9 +39,6 @@
     }
 }
 
-/* =========================
-   FADE IN ANIMATIONS
-   ========================= */
 @keyframes fade-in {
     from {
         opacity: 0;
@@ -87,9 +92,6 @@
     }
 }
 
-/* =========================
-   SCALE & GROW ANIMATIONS
-   ========================= */
 @keyframes scale-up {
     from {
         opacity: 0;
@@ -113,9 +115,6 @@
     }
 }
 
-/* =========================
-   SHIMMER & SHINE EFFECTS
-   ========================= */
 @keyframes shimmer {
     0% {
         background-position: -1000px 0;
@@ -134,9 +133,6 @@
     }
 }
 
-/* =========================
-   ROTATE & FLIP ANIMATIONS
-   ========================= */
 @keyframes rotate-in {
     from {
         opacity: 0;
@@ -170,9 +166,6 @@
     }
 }
 
-/* =========================
-   BOUNCE ANIMATIONS
-   ========================= */
 @keyframes bounce-in {
     0% {
         opacity: 0;
@@ -196,9 +189,6 @@
     }
 }
 
-/* =========================
-   GLOW ANIMATIONS
-   ========================= */
 @keyframes glow {
     0%, 100% {
         box-shadow: 0 0 10px rgba(255, 187, 0, 0.3), 0 0 20px rgba(255, 187, 0, 0.1);
@@ -217,9 +207,6 @@
     }
 }
 
-/* =========================
-   WAVE ANIMATIONS
-   ========================= */
 @keyframes wave {
     0%, 100% {
         transform: translateY(0px);
@@ -247,9 +234,6 @@
     }
 }
 
-/* =========================
-   PARALLAX & DEPTH
-   ========================= */
 @keyframes float {
     0%, 100% {
         transform: translateY(0px);
@@ -268,9 +252,6 @@
     }
 }
 
-/* =========================
-   TEXT ANIMATIONS
-   ========================= */
 @keyframes letter-spacing-increase {
     from {
         letter-spacing: 0em;

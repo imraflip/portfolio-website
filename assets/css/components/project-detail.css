@@ -1,6 +1,3 @@
-/* =========================
-   PROJECT DETAIL PAGE
-   ========================= */
 .project-title {
     font-size: var(--text-xl);
     margin: 0.8rem 0 1rem;
@@ -13,9 +10,6 @@
     color: var(--text-muted);
 }
 
-/* =========================
-   ENTRY SECTION
-   ========================= */
 .project-entries {
     margin-bottom: 4rem;
 }
@@ -32,9 +26,6 @@
     margin-top: 2.5rem;
 }
 
-/* =========================
-   ENTRY GRID
-   ========================= */
 .entry-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -64,9 +55,6 @@
     margin-top: 0.8rem;
 }
 
-/* =========================
-   ENTRY ITEM (PIXEL PANEL)
-   ========================= */
 .entry-item {
     background: var(--surface);
     border: 2px solid var(--border);
@@ -91,9 +79,6 @@
     color: var(--text-muted);
 }
 
-/* =========================
-   EMBED / MEDIA
-   ========================= */
 .entry-embed {
     position: relative;
     padding-top: 56.25%;
@@ -123,9 +108,6 @@
     image-rendering: crisp-edges;
 }
 
-/* =========================
-   PROJECT DOCS GRID
-   ========================= */
 .project-docs-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, 220px);
@@ -194,9 +176,6 @@
     opacity: 1;
 }
 
-/* =========================
-   BACK LINK (MENU ITEM)
-   ========================= */
 .back-link {
     display: inline-block;
     margin-bottom: 2rem;
