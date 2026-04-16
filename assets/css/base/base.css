@@ -83,6 +83,7 @@ a[target="_blank"]::after {
 .achievement-card::after,
 .project-card::after,
 .btn::after,
-.footer-inner a::after {
+.footer-inner a::after,
+.contact-value a::after {
     content: none;
 }
