@@ -143,15 +143,6 @@
     margin-top: 2rem;
 }
 
-.project-card,
-.achievement-card {
-    --tilt-x: 0deg;
-    --tilt-y: 0deg;
-    transform: perspective(1000px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
-    transition: transform 0.4s ease, border-color 0.2s ease;
-    will-change: transform;
-}
-
 .project-card {
     display: block;
     background: var(--surface);
@@ -162,17 +153,24 @@
     color: inherit;
     position: relative;
     cursor: url('../../img/cursor-pointer.png') 0 0, pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card:hover,
 .achievement-card:hover {
-    border-color: var(--border-2);
-    transition: transform 0.1s ease, border-color 0.2s ease;
+    border-color: var(--primary);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 0 rgba(255, 187, 0, 0.2);
 }
 
 .project-card:active,
 .achievement-card:active {
-    transform: perspective(1000px) scale(0.98);
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
+.achievement-card {
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card h3 {
