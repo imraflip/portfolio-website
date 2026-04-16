@@ -3,7 +3,7 @@ export default function initTypewriter() {
     if (!target) return;
 
     const cursor = document.querySelector('.typewriter-cursor');
-    const text = 'Penetration Tester | Computer Science Student';
+    const text = 'I break web apps for fun.';
     const speed = 55;
     let i = 0;
 

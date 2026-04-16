@@ -25,9 +25,61 @@
     font-size: 30px;
     letter-spacing: 0.1rem;
     font-weight: 300;
-    margin-bottom: 0.2rem;
+    margin: 0;
     text-shadow: 1px 1px 0 var(--border);
     color: var(--text-main);
+    white-space: nowrap;
+}
+
+.edu-title-row {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.2rem;
+    flex-wrap: wrap;
+}
+
+.edu-sep {
+    font-family: "Press Start 2P", monospace;
+    font-size: 1.2rem;
+    color: var(--border-2);
+    user-select: none;
+}
+
+.edu-progress {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.edu-progress-label {
+    font-family: "Press Start 2P", monospace;
+    font-size: 0.5rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+.edu-bar-track {
+    width: 120px;
+    height: 12px;
+    background: var(--surface);
+    border: 2px solid var(--border);
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.edu-bar-fill {
+    height: 100%;
+    width: calc(var(--level) * 1%);
+    background: var(--primary);
+    image-rendering: pixelated;
+    animation: edu-bar-grow 1.2s ease-out both;
+    box-shadow: 0 0 6px rgba(255, 187, 0, 0.3);
+}
+
+@keyframes edu-bar-grow {
+    from { width: 0; }
+    to { width: calc(var(--level) * 1%); }
 }
 
 .education-details .year {
@@ -40,4 +92,22 @@
     font-size: var(--text-sm);
     color: var(--text-main);
     max-width: 640px;
+}
+
+@media (max-width: 768px) {
+    .edu-title-row {
+        gap: 0.5rem;
+    }
+
+    .edu-sep {
+        display: none;
+    }
+
+    .edu-progress {
+        width: 100%;
+    }
+
+    .edu-bar-track {
+        flex: 1;
+    }
 }
