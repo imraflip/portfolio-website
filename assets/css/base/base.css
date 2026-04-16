@@ -65,7 +65,24 @@ button:active {
     color: var(--px-active);
 }
 
-a:focus-visible {
+a:focus-visible,
+button:focus-visible,
+[role="tab"]:focus-visible {
     outline: 2px solid var(--primary);
     outline-offset: 4px;
+}
+
+a[target="_blank"]::after {
+    content: " ↗";
+    font-size: 0.75em;
+    opacity: 0.6;
+}
+
+.brand::after,
+.brand-mobile::after,
+.achievement-card::after,
+.project-card::after,
+.btn::after,
+.footer-inner a::after {
+    content: none;
 }

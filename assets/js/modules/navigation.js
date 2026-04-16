@@ -37,12 +37,33 @@ export default function initNavigation() {
             hamburger.setAttribute('aria-expanded', String(open));
         };
 
-        hamburger.addEventListener('click', () => {
+        hamburger.addEventListener('click', (e) => {
+            e.stopPropagation();
             setExpanded(!menu.classList.contains('active'));
         });
 
         menu.querySelectorAll('a').forEach((link) => {
             link.addEventListener('click', () => setExpanded(false));
+        });
+
+        document.addEventListener('click', (e) => {
+            if (menu.classList.contains('active') && !menu.contains(e.target) && !hamburger.contains(e.target)) {
+                setExpanded(false);
+            }
+        });
+    }
+
+    if (document.startViewTransition) {
+        document.querySelectorAll('a[href]').forEach((link) => {
+            const href = link.getAttribute('href');
+            if (!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('mailto:') || link.hasAttribute('download')) return;
+
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                document.startViewTransition(() => {
+                    window.location.href = href;
+                });
+            });
         });
     }
 
