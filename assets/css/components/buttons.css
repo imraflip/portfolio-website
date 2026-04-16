@@ -9,7 +9,7 @@
 
     border-radius: 5px;
     text-decoration: none;
-    cursor: pointer;
+    cursor: url('../../img/cursor-pointer.png') 0 0, pointer;
     user-select: none;
 
     transition:

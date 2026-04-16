@@ -41,7 +41,7 @@
     border: none;
     padding: 0;
 
-    cursor: pointer;
+    cursor: url('../../img/cursor-pointer.png') 0 0, pointer;
 }
 
 .ui-popup-close img {
@@ -79,7 +79,7 @@
     border: 2px solid var(--border);
     color: var(--text-main);
 
-    cursor: pointer;
+    cursor: url('../../img/cursor-pointer.png') 0 0, pointer;
 }
 
 .ui-popup-ok:hover {

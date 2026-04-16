@@ -4,7 +4,7 @@ header .brand {
     font-weight: 400;
     color: var(--text-primary);
     text-decoration: none;
-    cursor: pointer;
+    cursor: url('../../img/cursor-pointer.png') 0 0, pointer;
     text-shadow: 2px 2px 0 var(--border);
 }
 
@@ -83,7 +83,7 @@ nav a.active {
     gap: 0.4rem;
     background: none;
     border: none;
-    cursor: pointer;
+    cursor: url('../../img/cursor-pointer.png') 0 0, pointer;
     padding: 0.5rem;
     z-index: 1001;
 }
@@ -128,7 +128,7 @@ nav a.active {
         font-weight: 400;
         color: var(--text-main);
         text-decoration: none;
-        cursor: pointer;
+        cursor: url('../../img/cursor-pointer.png') 0 0, pointer;
         order: 3;
     }
 

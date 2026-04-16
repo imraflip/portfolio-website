@@ -1,0 +1,63 @@
+.boot-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: var(--bg-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    cursor: url('../../img/cursor-pointer.png') 0 0, pointer;
+    transition: opacity 0.4s ease;
+}
+
+.boot-screen.boot-done {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.boot-log {
+    font-family: "Press Start 2P", monospace;
+    font-size: 0.65rem;
+    color: var(--primary);
+    line-height: 2;
+    max-width: 500px;
+    width: 100%;
+    text-shadow: 0 0 8px rgba(255, 187, 0, 0.4);
+}
+
+.boot-log div {
+    animation: fade-in 0.15s ease;
+}
+
+.boot-bar-track {
+    width: 100%;
+    max-width: 500px;
+    height: 16px;
+    border: 2px solid var(--border-2);
+    background: var(--surface);
+}
+
+.boot-bar-fill {
+    height: 100%;
+    width: 0;
+    background: var(--primary);
+    transition: width 0.3s ease;
+    image-rendering: pixelated;
+    box-shadow: 0 0 10px rgba(255, 187, 0, 0.3);
+}
+
+.boot-skip {
+    font-family: "Press Start 2P", monospace;
+    font-size: 0.5rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .boot-log {
+        font-size: 0.5rem;
+    }
+}

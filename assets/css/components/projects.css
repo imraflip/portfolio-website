@@ -19,7 +19,7 @@
     font-size: 16px;
     letter-spacing: 0.05rem;
     color: var(--text-primary);
-    cursor: pointer;
+    cursor: url('../../img/cursor-pointer.png') 0 0, pointer;
     transition: all 0.2s ease;
     text-transform: capitalize;
     white-space: nowrap;
@@ -65,7 +65,7 @@
     overflow: hidden;
     text-decoration: none;
     color: inherit;
-    cursor: pointer;
+    cursor: url('../../img/cursor-pointer.png') 0 0, pointer;
     position: relative;
 }
 
@@ -161,7 +161,7 @@
     text-decoration: none;
     color: inherit;
     position: relative;
-    cursor: pointer;
+    cursor: url('../../img/cursor-pointer.png') 0 0, pointer;
 }
 
 .project-card:hover,

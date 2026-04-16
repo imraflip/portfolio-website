@@ -142,7 +142,7 @@
     text-decoration: none;
     color: inherit;
     transition: all 0.3s ease;
-    cursor: pointer;
+    cursor: url('../../img/cursor-pointer.png') 0 0, pointer;
 }
 
 .social-card:hover {
